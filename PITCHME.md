@@ -11,19 +11,23 @@
 
 ---
 
-## Install
+![alt](assets/docker_vs_hv.png)
 
-### Docker For Mac (brew cask)
+---
+
+# Install
+
+## Docker For Mac (brew cask)
 
 ```
 $ brew cask install docker
 ```
 
-### Docker For Mac (dmg)
+## Docker For Mac (dmg)
 
 https://www.docker.com/docker-mac
 
-## GUI Settings
+# GUI Settings
 
 ```
 $ open /Applications/Docker.app
