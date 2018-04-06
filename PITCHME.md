@@ -32,3 +32,70 @@ https://www.docker.com/docker-mac
 ```
 $ open /Applications/Docker.app
 ```
+
+画面に沿って設定する。
+
+---
+
+# Example
+
+https://github.com/shin1x1/laravel-ddd-sample
+
+---
+
+
+## 環境構築
+
+```
+git clone https://github.com/shin1x1/laravel-ddd-sample
+cd laravel-ddd-sample
+
+docker-compose up -d
+docker-compose run web composer install
+cp -a .env.example .env
+docker-compose run web php artisan key:generate
+```
+
+---?code=https://github.com/shin1x1/laravel-ddd-sample/blob/master/docker-compose.yml
+
+---
+
+## マイグレーション
+
+```
+docker-compose run web php artisan migrate
+docker-compose run web php artisan db:seed
+```
+
+---
+
+## ブラウザ表示
+
+```
+open http://localhost:8000
+```
+
+---
+
+## PostgreSQLログイン
+
+```
+docker-compose run db psql --version
+docker-compose exec db psql -U app app
+```
+
+---
+
+## コンテナ停止
+
+```
+docker-compose down
+```
+
+---
+
+## コンテナをすべて削除する
+
+```
+docker rm $(docker ps -aq)
+```
