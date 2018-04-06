@@ -57,6 +57,8 @@ docker-compose run web php artisan key:generate
 
 ---?code=docker-compose.yml
 
+`docker-compose.yml`
+
 ---
 
 ## マイグレーション
