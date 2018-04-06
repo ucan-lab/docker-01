@@ -55,7 +55,7 @@ cp -a .env.example .env
 docker-compose run web php artisan key:generate
 ```
 
----?code=https://github.com/shin1x1/laravel-ddd-sample/blob/master/docker-compose.yml
+---?code=docker-compose.yml
 
 ---
 
