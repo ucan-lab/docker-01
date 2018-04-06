@@ -27,7 +27,7 @@ $ brew cask install docker
 
 https://www.docker.com/docker-mac
 
-# GUI Settings
+## GUI Settings
 
 ```
 $ open /Applications/Docker.app
@@ -42,7 +42,6 @@ $ open /Applications/Docker.app
 https://github.com/shin1x1/laravel-ddd-sample
 
 ---
-
 
 ## 環境構築
 
